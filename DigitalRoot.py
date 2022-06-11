@@ -7,15 +7,17 @@ def main(num=None):
         )
 
     def digitalsum(num):
-        digitalsum = 0
+        summa = 0
         while num > 0:
-            digitalsum = digitalsum + num % 10
+            summa = summa + num % 10
             num = num // 10
-        return digitalsum
+        return summa
 
-    if validator(num):
-        num = digitalsum(num)
+    def recursivedigitalsum(num):
         while num > 9:
             num = digitalsum(num)
         return num
+
+    if validator(num):
+        return recursivedigitalsum(num)
     return False
