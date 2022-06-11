@@ -9,8 +9,8 @@
 - add up each digit
 - if result is longer than 1 => add up results digits
 - otherwise return result
-### handle cases where only one round is needed
-🔴
+### A) handle cases where only one round is needed
+🔴🟢
 
 ***
 ✅🍅🔴🟢♻️💿

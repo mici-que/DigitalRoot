@@ -7,5 +7,9 @@ def main(num=None):
         )
 
     if validator(num):
-        return 0
+        digitalsum = 0
+        strnum = str(num)
+        for char in strnum:
+            digitalsum = digitalsum + int(char)
+        return digitalsum
     return False
