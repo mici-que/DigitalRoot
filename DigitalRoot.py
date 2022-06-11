@@ -6,10 +6,13 @@ def main(num=None):
             and 0 <= num  # param is non-negative
         )
 
-    if validator(num):
+    def digitalsum(num):
         digitalsum = 0
-        strnum = str(num)
-        for char in strnum:
-            digitalsum = digitalsum + int(char)
+        while num > 0:
+            digitalsum = digitalsum + num % 10
+            num = num // 10
         return digitalsum
+
+    if validator(num):
+        return digitalsum(num)
     return False

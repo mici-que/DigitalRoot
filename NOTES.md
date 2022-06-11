@@ -10,7 +10,7 @@
 - if result is longer than 1 => add up results digits
 - otherwise return result
 ### A) handle cases where only one round is needed
-🔴🟢
+🔴🟢♻️
 
 ***
 ✅🍅🔴🟢♻️💿
