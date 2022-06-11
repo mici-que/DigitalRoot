@@ -14,5 +14,8 @@ def main(num=None):
         return digitalsum
 
     if validator(num):
-        return digitalsum(num)
+        num = digitalsum(num)
+        while num > 9:
+            num = digitalsum(num)
+        return num
     return False
