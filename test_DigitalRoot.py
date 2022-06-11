@@ -75,3 +75,18 @@ def test_FourDigitsBelow10():
     """input has four digits, sum is below 10: 3000=>3"""
     param = 3000
     assert main(param) == 3
+
+
+# 2b add tests where digital sum is bigger than 9
+
+
+def test_TwoRoundsNeeded():
+    """input is 99, should return 18"""
+    param = 99
+    assert main(param) == 9
+
+
+def test_ThreeRoundsNeeded():
+    """input is 493193, should return 2"""
+    param = 493193
+    assert main(param) == 2
